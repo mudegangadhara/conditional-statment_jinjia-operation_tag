@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    
+     <h1>If conditions</h1>
+        <h1>{{name}}</h1>
+    
+        {% if a > 100 %}
+            <h1>enter if block</h1>
+            <h2>{{a}}</h2>
+        {% else %}
+            <h1>enter the else block</h1>
+
+        {% endif %}
+       
+        <h1>-----------------!------------------</h1>
+
+    <h1>If-else condition</h1>
+    {% if a > b %}
+        <h1>a is Max</h1>
+        <h1>{{a}}</h1>
+    {% else %}
+        <h1>b is Max</h1>
+        <h1>{{b}}</h1>
+    {% endif %}
+    <h1>------------------!------------------</h1>
+
+    <h1>If-elif-else condition</h1>
+    {% if a > b and a > c%}
+        <h1>a is Max</h1>
+        <h2>if block is enterd</h2>
+    {% elif b > c %}
+        <h1>b is Max</h1>
+        <h2>elif block is enterd</h2>
+    {% else %}
+        <h1>c is Max</h1>
+        <h2>else block is enterd</h2>
+    {% endif %}
+    <h1>------------------!------------------</h1>
+
+    <h1>nested - if-else Condition</h1>
+        {% if a > b %}
+            {% if a > c %}
+                <h1>A is Max</h1>
+            {% else %}
+                <h1>C is Max</h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h1>B is Max</h1>
+            {% else %}
+                <h1>C is Max</h1>
+            {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
